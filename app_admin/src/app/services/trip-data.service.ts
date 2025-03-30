@@ -15,7 +15,7 @@ export class TripDataService {
   constructor(private http: HttpClient,
     @Inject(BROWSER_STORAGE) private storage: Storage
   ) {}
-  baseUrl = 'http://localhost:3000/api/trips';
+  baseUrl = 'http://localhost:3000/api';
   url = this.baseUrl + '/trips';
 
     getTrips() : Observable<Trip[]> {

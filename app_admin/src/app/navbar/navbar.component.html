@@ -12,9 +12,9 @@
     </div>
     <div class="navbar-end ">
         <a routerLink="login" class="nav-item" *ngIf="!isLoggedIn()">
-            <span class="has-icon-left">Log in</span>
+            <span class="has-icon-left">Log in</span> 
         </a>
-        <a class="nav-item active" (click)="onLogout()" *ngIf="isLoggedIn">
+        <a class="nav-item active" (click)="onLogout()" *ngIf="isLoggedIn()">
             <span class="has-icon-left">Log out</span>
         </a>
     </div>
